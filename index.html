@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--  emailjs for contact me -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("RWkRbk-WV8GBRGi7A");
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="navbar">
+      <div class="logo">
+        <p>portfolio</p>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact-me</a></li>
+        </ul>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <!-- home  -->
+
+    <div class="home" id="home">
+      <div class="home-para">
+        <p>Hello, World! 🌍I'm</p>
+        <h1>Dibyanshu Kumar</h1>
+        <p>
+          I design and develop intelligent, user-friendly applications that make
+          life a little smarter. My interests span full-stack development, AI,
+          and problem-solving for real-world challenges.
+        </p>
+        <div class="home-icons">
+          <a
+            href="https://www.linkedin.com/in/dibyanshu-kumar-146b74326/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Krish-megabytes" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=615670287172511"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="img/my-pic.png" alt="dibyanshu img" />
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-heading">
+        <h2>About Me</h2>
+        <p>A quick snapshot of who I am and what I do</p>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <h3>Who I Am</h3>
+          <p>
+            I’m <strong>Divyanshu Kumar</strong> , a Computer Science
+            Engineering student with a strong interest in full-stack
+            development, AI-ML , and problem-solving. <br />My journey started
+            with learning the fundamentals of C, C++, Java, Python, and web
+            technologies, and I’ve been expanding my skills by building projects
+            that connect technology with real-world impact.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>What I Know</h3>
+          <p>
+            🌐 Proficient in HTML, CSS, and JavaScript | Currently learning and
+            improving skills in Node.js, React, Firebase, Git, MongoDB, and
+            more.<br />
+            🤖 Exploring the world of AI and Machine Learning, where I combine
+            coding with data-driven intelligence to build smarter, impactful
+            solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+
+    <section class="skills" id="skills">
+      <div class="skills-heading">
+        <h2>Skills</h2>
+        <p>Technologies I work with</p>
+      </div>
+
+      <div class="skills-icons">
+        <div class="skill-item">
+          <i class="fab fa-html5"></i>
+          <span>HTML</span>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-java"></i>
+          <span>Java</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-js"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-react"></i>
+          <span>React</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-node-js"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-database"></i>
+          <span>MongoDB</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="project-heading">
+        <p>Browse my recent</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="project-box">
+        <div class="box">
+          <div class="project-img">
+            <img src="img/project1-pic.png" alt="portfolio website" />
+          </div>
+          <div class="project-box-heading">
+            <h3>Portfolio Website</h3>
+          </div>
+          <div class="two-box">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://live-demo.com/" target="_blank">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="project-img">
+            <img src="img/project4-pic.png" alt="weather app" />
+          </div>
+          <div class="project-box-heading">
+            <h3>Weather app</h3>
+          </div>
+          <div class="two-box">
+            <a
+              href="https://github.com/Krish-megabytes/weather-App"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              href="https://weather-app-fawn-six-90.vercel.app/"
+              target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="project-img">
+            <img src="img/project2-pic.png" alt="Text to Speech" />
+          </div>
+          <div class="project-box-heading">
+            <h3>Text to Speech</h3>
+          </div>
+          <div class="two-box">
+            <a
+              href="https://github.com/Krish-megabytes/text-to-speech-website"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              href="https://text-to-speech-website-rho.vercel.app/"
+              target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+
+        <!-- Hidden projects  -->
+        <div class="box hidden-project">
+          <div class="project-img">
+            <img src="img/project3-pic.png" alt="stone paper scissor game" />
+          </div>
+          <div class="project-box-heading">
+            <h3>stone paper scissor game</h3>
+          </div>
+          <div class="two-box">
+            <a
+              href="https://github.com/Krish-megabytes/rock-paper-scissor-game"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              href="https://rock-paper-scissor-game-xi-opal.vercel.app/"
+              target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+
+        <div class="box hidden-project">
+          <div class="project-img">
+            <img src="img/project5-pic.png" alt="clock" />
+          </div>
+          <div class="project-box-heading">
+            <h3>Clock</h3>
+          </div>
+          <div class="two-box">
+            <a href="https://github.com/Krish-megabytes/clock" target="_blank"
+              >GitHub</a
+            >
+            <a href="https://clock-gamma-lac.vercel.app/" target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Show More Button -->
+      <div class="show-more-container">
+        <button id="showMoreBtn">Show More</button>
+      </div>
+    </section>
+
+    <!--  CONTACT ME SECTION -->
+
+    <section class="contact-me" id="contact">
+      <div class="contact-para">
+        <h2>Contact Me</h2>
+        <p>Let's get in touch!</p>
+      </div>
+      <div class="contact-container">
+        <form class="form" id="contact-form">
+          <input
+            type="text"
+            placeholder="Your Name"
+            name="from_name"
+            id="name"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            name="from_email"
+            id="email"
+            required
+          />
+          <input
+            type="tel"
+            placeholder="Contact Number"
+            name="contact"
+            id="contact-no"
+            required
+          />
+          <textarea
+            placeholder="Your Message"
+            name="message"
+            id="message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <p>Made with ❤️ by Dibyanshu Kumar © 2025</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
